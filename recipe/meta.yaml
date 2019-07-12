@@ -1,5 +1,5 @@
 {% set name = "DeepXDE" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8326390e658d93f2412e3173f3834996502d61abbac64be982e7b5b455bfdc3a
+  sha256: dbd420d961955508c2fcd0311b1c431ea8a7c5acd0211aa8ec4625f948dfa458
 
 build:
   number: 0
@@ -45,9 +45,13 @@ about:
   description: |
     DeepXDE is a deep learning library for solving differential equations on top of TensorFlow.
     Use DeepXDE if you need a deep learning library that
-    solves partial differential equations (PDEs), integro-differential equations (IDEs),
-    fractional partial differential equations (fPDEs), and inverse problems for differential equations.
-  doc_url: https://github.com/lululxvi/deepxde
+    solves partial differential equations (PDEs),
+    solves integro-differential equations (IDEs),
+    solves fractional partial differential equations (fPDEs),
+    solves inverse problems for differential equations,
+    approximates functions from a dataset with/without constraints,
+    and approximates functions from multi-fidelity data.
+  doc_url: https://deepxde.readthedocs.io
   dev_url: https://github.com/lululxvi/deepxde
 
 extra:
