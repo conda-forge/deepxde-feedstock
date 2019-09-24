@@ -11,22 +11,19 @@ Summary: Deep learning library for solving differential equations
 
 DeepXDE is a deep learning library for solving differential equations on top of TensorFlow.
 Use DeepXDE if you need a deep learning library that
-solves partial differential equations (PDEs), integro-differential equations (IDEs),
-fractional partial differential equations (fPDEs), and inverse problems for differential equations.
+solves partial differential equations (PDEs),
+solves integro-differential equations (IDEs),
+solves fractional partial differential equations (fPDEs),
+solves inverse problems for differential equations,
+approximates functions from a dataset with/without constraints,
+and approximates functions from multi-fidelity data.
 
 
 Current build status
 ====================
 
 
-<table><tr>
-    <td>Appveyor</td>
-    <td>
-      <a href="https://ci.appveyor.com/project/conda-forge/deepxde-feedstock/branch/master">
-        <img alt="windows" src="https://img.shields.io/appveyor/ci/conda-forge/deepxde-feedstock/master.svg?label=Windows">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
@@ -101,7 +98,12 @@ Current build status
       </details>
     </td>
   </tr>
-![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
+  <tr>
+    <td>Linux_ppc64le</td>
+    <td>
+      <img src="https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg" alt="ppc64le disabled">
+    </td>
+  </tr>
 </table>
 
 Current release info
