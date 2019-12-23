@@ -1,5 +1,5 @@
 {% set name = "DeepXDE" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2456f4be0cc775d1af619fed5b6cab6ad7f455c5423500067051bf0a93e2657
+  sha256: 0eb8b78ecb707044dd5c15b6db7ef471251afd6a909f783df1a06571ef795026
 
 build:
   number: 0
-  # Skip windows with Pytho 2.7 as TensorFlow does not support it well.
+  # Skip windows with Python 2.7 as TensorFlow does not support it well.
   skip: True  # [win and py27]
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -50,7 +50,8 @@ about:
     solves fractional partial differential equations (fPDEs),
     solves inverse problems for differential equations,
     approximates functions from a dataset with/without constraints,
-    and approximates functions from multi-fidelity data.
+    approximates functions from multi-fidelity data,
+    and approximates operators.
   doc_url: https://deepxde.readthedocs.io
   dev_url: https://github.com/lululxvi/deepxde
 
