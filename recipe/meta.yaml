@@ -10,7 +10,7 @@ source:
   sha256: 0eb8b78ecb707044dd5c15b6db7ef471251afd6a909f783df1a06571ef795026
 
 build:
-  number: 0
+  number: 1
   # Skip windows with Python 2.7 as TensorFlow does not support it well.
   skip: True  # [win and py27]
   script: "{{ PYTHON }} -m pip install . -vv"
@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - {{ pin_compatible('numpy') }}
-    - matplotlib
+    - matplotlib-base
     - salib
     - scikit-learn
     - scipy
