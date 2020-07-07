@@ -5,7 +5,7 @@ Home: https://github.com/lululxvi/deepxde
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Deep learning library for solving differential equations
 
