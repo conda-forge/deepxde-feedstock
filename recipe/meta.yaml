@@ -27,13 +27,13 @@ requirements:
     - salib
     - scikit-learn
     - scipy
-    - tensorflow
+    - tensorflow  # [not py38]
 
 test:
   imports:
     # Skip the import test on Linux as TensorFlow require a more recent
     # version of GLIBC++ than the VM used to build and test package.
-    - deepxde  # [not linux]
+    - deepxde  # [not linux and not py38]
 
 about:
   home: https://github.com/lululxvi/deepxde
