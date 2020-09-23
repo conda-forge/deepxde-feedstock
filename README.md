@@ -9,15 +9,13 @@ Feedstock license: BSD-3-Clause
 
 Summary: Deep learning library for solving differential equations
 
-DeepXDE is a deep learning library for solving differential equations on top of TensorFlow.
-Use DeepXDE if you need a deep learning library that
-solves partial differential equations (PDEs),
-solves integro-differential equations (IDEs),
-solves fractional partial differential equations (fPDEs),
-solves inverse problems for differential equations,
-approximates functions from a dataset with/without constraints,
-approximates functions from multi-fidelity data,
-and approximates operators.
+DeepXDE is a deep learning library on top of TensorFlow. Use DeepXDE if you need a deep learning library that
+solves forward and inverse partial differential equations (PDEs) via physics-informed neural network (PINN),
+solves forward and inverse integro-differential equations (IDEs) via PINN,
+solves forward and inverse fractional partial differential equations (fPDEs) via fractional PINN (fPINN),
+approximates functions from multi-fidelity data via multi-fidelity NN (MFNN),
+approximates nonlinear operators via deep operator network (DeepONet),
+approximates functions from a dataset with/without constraints.
 
 
 Current build status
