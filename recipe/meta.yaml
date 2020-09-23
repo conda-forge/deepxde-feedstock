@@ -1,5 +1,5 @@
 {% set name = "DeepXDE" %}
-{% set version = "0.8.4" %}
+{% set version = "0.8.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9ac459be1e6a8880292dec06cb764fa20f1dcb888adabf93b29e90614e50ce95
+  sha256: 48c1b0d7915ec7b1436a4c09e1582cff137465da70aa0399d7e6faa40eaf1fa9
 
 build:
   number: 0
@@ -42,7 +42,7 @@ about:
   license_file: LICENSE
   summary: Deep learning library for solving differential equations
 
-  description: |    
+  description: |
     DeepXDE is a deep learning library on top of TensorFlow. Use DeepXDE if you need a deep learning library that
     solves forward and inverse partial differential equations (PDEs) via physics-informed neural network (PINN),
     solves forward and inverse integro-differential equations (IDEs) via PINN,
