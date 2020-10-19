@@ -27,13 +27,13 @@ requirements:
     - salib
     - scikit-learn
     - scipy
-    - tensorflow  # [py<38]
+    # - tensorflow  # [py<38]
 
 test:
   imports:
     # Skip the import test on Linux as TensorFlow require a more recent
     # version of GLIBC++ than the VM used to build and test package.
-    - deepxde  # [not linux and py<38]
+    # - deepxde  # [not linux and py<38]
 
 about:
   home: https://github.com/lululxvi/deepxde
@@ -42,14 +42,7 @@ about:
   license_file: LICENSE
   summary: Deep learning library for solving differential equations
 
-  description: |
-    DeepXDE is a deep learning library on top of TensorFlow. Use DeepXDE if you need a deep learning library that
-    solves forward and inverse partial differential equations (PDEs) via physics-informed neural network (PINN),
-    solves forward and inverse integro-differential equations (IDEs) via PINN,
-    solves forward and inverse fractional partial differential equations (fPDEs) via fractional PINN (fPINN),
-    approximates functions from multi-fidelity data via multi-fidelity NN (MFNN),
-    approximates nonlinear operators via deep operator network (DeepONet),
-    approximates functions from a dataset with/without constraints.
+  description: DeepXDE is a deep learning library for scientific machine learning on top of TensorFlow.
   doc_url: https://deepxde.readthedocs.io
   dev_url: https://github.com/lululxvi/deepxde
 
