@@ -1,5 +1,5 @@
 {% set name = "DeepXDE" %}
-{% set version = "0.8.5" %}
+{% set version = "0.8.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 48c1b0d7915ec7b1436a4c09e1582cff137465da70aa0399d7e6faa40eaf1fa9
+  sha256: 11265d6c3e74a0d1c80d186d0473ef4d2d8d764273e8e2009e1151082e0cc541
 
 build:
-  number: 1
+  number: 0
   # Skip windows with Python 2.7 as TensorFlow does not support it well.
   skip: true  # [win and py27]
   script: {{ PYTHON }} -m pip install . -vv

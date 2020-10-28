@@ -13,14 +13,7 @@ Development: https://github.com/lululxvi/deepxde
 
 Documentation: https://deepxde.readthedocs.io
 
-DeepXDE is a deep learning library on top of TensorFlow. Use DeepXDE if you need a deep learning library that
-solves forward and inverse partial differential equations (PDEs) via physics-informed neural network (PINN),
-solves forward and inverse integro-differential equations (IDEs) via PINN,
-solves forward and inverse fractional partial differential equations (fPDEs) via fractional PINN (fPINN),
-approximates functions from multi-fidelity data via multi-fidelity NN (MFNN),
-approximates nonlinear operators via deep operator network (DeepONet),
-approximates functions from a dataset with/without constraints.
-
+DeepXDE is a deep learning library for scientific machine learning on top of TensorFlow.
 
 Current build status
 ====================
