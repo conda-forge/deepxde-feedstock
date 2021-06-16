@@ -24,8 +24,8 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - matplotlib-base
-    - salib
     - scikit-learn
+    - scikit-optimize
     - scipy
     # - tensorflow  # [py<38]
 
