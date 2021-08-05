@@ -42,7 +42,7 @@ about:
   license_file: LICENSE
   summary: Deep learning library for solving differential equations
 
-  description: DeepXDE is a deep learning library for scientific machine learning on top of TensorFlow.
+  description: DeepXDE is a library for scientific machine learning.
   doc_url: https://deepxde.readthedocs.io
   dev_url: https://github.com/lululxvi/deepxde
 
