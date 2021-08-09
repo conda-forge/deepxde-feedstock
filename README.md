@@ -13,7 +13,7 @@ Development: https://github.com/lululxvi/deepxde
 
 Documentation: https://deepxde.readthedocs.io
 
-DeepXDE is a deep learning library for scientific machine learning on top of TensorFlow.
+DeepXDE is a library for scientific machine learning.
 
 Current build status
 ====================
