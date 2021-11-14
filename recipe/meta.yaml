@@ -10,7 +10,7 @@ source:
   sha256: 7557e090996b6da9e381bccabfb28b6c19956f3013210a70b23781a9257c6c1d
 
 build:
-  number: 0
+  number: 1
   # Skip windows with Python 2.7 as TensorFlow does not support it well.
   skip: true  # [win and py27]
   script: {{ PYTHON }} -m pip install . -vv
