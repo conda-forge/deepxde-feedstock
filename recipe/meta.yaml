@@ -1,5 +1,5 @@
 {% set name = "DeepXDE" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 22caa04a91b9e53dd86fc4bcaba0a767e7e9e646f5eecb2a27faf60b45108b8b
+  sha256: dbf5cb52c3a25afa3779812d66f8d646c78abf53f5f1bcca410d2c6e377beef8
 
 build:
   number: 0
-  # Skip windows with Python 2.7 as TensorFlow does not support it well.
-  skip: true  # [win and py27]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -37,10 +35,10 @@ test:
 
 about:
   home: https://github.com/lululxvi/deepxde
-  license: Apache-2.0
-  license_family: Apache
+  license: LGPL-2.1-only
+  license_family: LGPL
   license_file: LICENSE
-  summary: Deep learning library for solving differential equations
+  summary: A library for scientific machine learning
 
   description: DeepXDE is a library for scientific machine learning.
   doc_url: https://deepxde.readthedocs.io
