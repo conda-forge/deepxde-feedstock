@@ -11,8 +11,6 @@ source:
 
 build:
   number: 0
-  # Skip windows with Python 2.7 as TensorFlow does not support it well.
-  skip: true  # [win and py27]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -37,10 +35,10 @@ test:
 
 about:
   home: https://github.com/lululxvi/deepxde
-  license: Apache-2.0
-  license_family: Apache
+  license: LGPL-2.1
+  license_family: LGPL
   license_file: LICENSE
-  summary: Deep learning library for solving differential equations
+  summary: A library for scientific machine learning
 
   description: DeepXDE is a library for scientific machine learning.
   doc_url: https://deepxde.readthedocs.io
