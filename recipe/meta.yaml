@@ -30,7 +30,7 @@ requirements:
 test:
   requires:
     - pytorch
-    - tensorflow
+    - tensorflow >=2.6.0
     - tensorflow-probability
   files:
     - test_pytorch.py
