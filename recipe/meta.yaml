@@ -10,16 +10,17 @@ source:
   sha256: dbf5cb52c3a25afa3779812d66f8d646c78abf53f5f1bcca410d2c6e377beef8
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.7
     - pip
     - numpy
   run:
-    - python
+    - python >=3.7
     - {{ pin_compatible('numpy') }}
     - matplotlib-base
     - scikit-learn
