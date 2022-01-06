@@ -30,6 +30,8 @@ requirements:
 test:
   requires:
     - pytorch
+  files:
+    - test.py
   commands:
     - export DDEBACKEND=pytorch
     - python -c "import deepxde; print(deepxde.__version__)"
