@@ -33,6 +33,7 @@ test:
   commands:
     - export DDEBACKEND=pytorch
     - python -c "import deepxde; print(deepxde.__version__)"
+    - python test.py
 
 about:
   home: https://github.com/lululxvi/deepxde
