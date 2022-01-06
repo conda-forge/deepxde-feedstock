@@ -14,7 +14,7 @@ from deepxde.backend import tf
 def pde(x, y):
     dy_xx = dde.grad.hessian(y, x)
     # Use tf.sin for backend tensorflow.compat.v1 or tensorflow
-    return -dy_xx - np.pi ** 2 * torch.sin(np.pi * x)
+    return -dy_xx - np.pi ** 2 * tf.sin(np.pi * x)
     # Use torch.sin for backend pytorch
     # return -dy_xx - np.pi ** 2 * torch.sin(np.pi * x)
 
