@@ -31,7 +31,9 @@ test:
   requires:
     - pytorch
   commands:
-    - sed -i.bak "s/tensorflow.compat.v1/pytorch/g" ~/.deepxde/config.json
+    - mkdir ~/.deepxde
+    - touch ~/.deepxde/config.json
+    - echo "{\"backend\": \"pytorch\"}" > ~/.deepxde/config.json
     - python -c "import deepxde; print(deepxde.__version__)"
 
 about:
