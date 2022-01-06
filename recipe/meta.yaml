@@ -28,9 +28,9 @@ requirements:
     - scipy
 
 test:
-#   requires:
+  requires:
 #     - pytorch
-#   commands:
+  commands:
 #     - export BACKEND=pytorch 
 #     - python -c "import deepxde; print(deepxde.__version__)"
 
