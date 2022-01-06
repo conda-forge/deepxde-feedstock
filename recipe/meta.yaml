@@ -30,12 +30,19 @@ requirements:
 test:
   requires:
     - pytorch
+    - tensorflow
+    - tensorflow-probability
   files:
-    - test.py
+    - test_pytorch.py
+    - test_tensorflow.py
   commands:
     - export DDEBACKEND=pytorch
     - python -c "import deepxde; print(deepxde.__version__)"
-    - python test.py
+    - python test_pytorch.py
+    - export DDBACKEND=tensorflow
+    - python test_tensorflow.py
+    - export DDBACKEND=tensorflow.compat.v1
+    - python test_tensorflow.py
 
 about:
   home: https://github.com/lululxvi/deepxde
