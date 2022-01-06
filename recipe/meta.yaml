@@ -39,9 +39,9 @@ test:
     - export DDEBACKEND=pytorch
     - python -c "import deepxde; print(deepxde.__version__)"
     - python test_pytorch.py
-    - export DDBACKEND=tensorflow
+    - export DDEBACKEND=tensorflow
     - python test_tensorflow.py
-    - export DDBACKEND=tensorflow.compat.v1
+    - export DDEBACKEND=tensorflow.compat.v1
     - python test_tensorflow.py
 
 about:
