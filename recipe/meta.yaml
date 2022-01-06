@@ -21,18 +21,17 @@ requirements:
     - numpy
   run:
     - python >=3.7
-    - {{ pin_compatible('numpy') }}
+    - numpy
     - matplotlib-base
     - scikit-learn
     - scikit-optimize
     - scipy
-    # - tensorflow  # [py<38]
 
 test:
-  imports:
-    # Skip the import test on Linux as TensorFlow require a more recent
-    # version of GLIBC++ than the VM used to build and test package.
-    # - deepxde  # [not linux and py<38]
+  requires:
+    - pytorch
+  commands:
+    - BACKEND=pytorch python -c "import deepxde; print(deepxde.__version__)"
 
 about:
   home: https://github.com/lululxvi/deepxde
