@@ -28,11 +28,11 @@ requirements:
     - scipy
 
 test:
-  requires:
-    - pytorch
-  commands:
-    - export BACKEND=pytorch 
-    - python -c "import deepxde; print(deepxde.__version__)"
+#   requires:
+#     - pytorch
+#   commands:
+#     - export BACKEND=pytorch 
+#     - python -c "import deepxde; print(deepxde.__version__)"
 
 about:
   home: https://github.com/lululxvi/deepxde
