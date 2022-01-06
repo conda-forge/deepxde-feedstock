@@ -29,11 +29,9 @@ requirements:
 
 test:
   requires:
-    - pytorch
+#     - pytorch
+    - tensorflow
   commands:
-    - mkdir ~/.deepxde
-    - touch ~/.deepxde/config.json
-    - echo "{\"backend\": \"pytorch\"}" > ~/.deepxde/config.json
     - python -c "import deepxde; print(deepxde.__version__)"
 
 about:
