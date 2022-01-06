@@ -10,28 +10,39 @@ source:
   sha256: dbf5cb52c3a25afa3779812d66f8d646c78abf53f5f1bcca410d2c6e377beef8
 
 build:
-  number: 0
+  number: 1
+  noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.7
     - pip
     - numpy
   run:
-    - python
-    - {{ pin_compatible('numpy') }}
+    - python >=3.7
+    - numpy
     - matplotlib-base
     - scikit-learn
     - scikit-optimize
     - scipy
-    # - tensorflow  # [py<38]
 
 test:
-  imports:
-    # Skip the import test on Linux as TensorFlow require a more recent
-    # version of GLIBC++ than the VM used to build and test package.
-    # - deepxde  # [not linux and py<38]
+  requires:
+    - pytorch
+    - tensorflow >=2.6.0
+    - tensorflow-probability
+  files:
+    - test_pytorch.py
+    - test_tensorflow.py
+  commands:
+    - export DDEBACKEND=pytorch
+    - python -c "import deepxde; print(deepxde.__version__)"
+    - python test_pytorch.py
+    - export DDEBACKEND=tensorflow
+    - python test_tensorflow.py
+    - export DDEBACKEND=tensorflow.compat.v1
+    - python test_tensorflow.py
 
 about:
   home: https://github.com/lululxvi/deepxde
