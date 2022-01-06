@@ -29,9 +29,9 @@ requirements:
 
 test:
   requires:
-#     - pytorch
-    - tensorflow
+    - pytorch
   commands:
+    - export DDEBACKEND=pytorch
     - python -c "import deepxde; print(deepxde.__version__)"
 
 about:
