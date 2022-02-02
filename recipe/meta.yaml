@@ -30,14 +30,13 @@ requirements:
 test:
   requires:
     - pytorch
-    - tensorflow >=2.6.0
-    - tensorflow-probability
+    - tensorflow ==2.6.2
+    - tensorflow-probability ==0.14.1
   files:
     - test_pytorch.py
     - test_tensorflow.py
   commands:
     - export DDEBACKEND=pytorch
-    - python -c "import deepxde; print(deepxde.__version__)"
     - python test_pytorch.py
     - export DDEBACKEND=tensorflow
     - python test_tensorflow.py
