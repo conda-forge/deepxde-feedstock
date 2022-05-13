@@ -21,8 +21,8 @@ requirements:
     - numpy
   run:
     - python >=3.7
-    - numpy
     - matplotlib-base
+    - numpy
     - scikit-learn
     - scikit-optimize
     - scipy
@@ -30,27 +30,27 @@ requirements:
 test:
   requires:
     - pytorch
-    - tensorflow ==2.6.2
-    - tensorflow-probability ==0.14.1
+    - tensorflow ==2.7.1
+    - tensorflow-probability ==0.15.0
   files:
-    - test_pytorch.py
     - test_tensorflow.py
+    - test_pytorch.py
   commands:
-    - export DDEBACKEND=pytorch
-    - python test_pytorch.py
-    - export DDEBACKEND=tensorflow
-    - python test_tensorflow.py
     - export DDEBACKEND=tensorflow.compat.v1
     - python test_tensorflow.py
+    - export DDEBACKEND=tensorflow
+    - python test_tensorflow.py
+    - export DDEBACKEND=pytorch
+    - python test_pytorch.py
 
 about:
   home: https://github.com/lululxvi/deepxde
   license: LGPL-2.1-only
   license_family: LGPL
   license_file: LICENSE
-  summary: A library for scientific machine learning
+  summary: A library for scientific machine learning and physics-informed learning
 
-  description: DeepXDE is a library for scientific machine learning.
+  description: DeepXDE is a library for scientific machine learning and physics-informed learning.
   doc_url: https://deepxde.readthedocs.io
   dev_url: https://github.com/lululxvi/deepxde
 
