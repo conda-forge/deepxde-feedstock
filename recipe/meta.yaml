@@ -38,8 +38,8 @@ test:
   commands:
     - export DDEBACKEND=tensorflow.compat.v1
     - python test_tensorflow.py
-    - export DDEBACKEND=tensorflow
-    - python test_tensorflow.py
+    # - export DDEBACKEND=tensorflow  # The platform host doesn't support XLA
+    # - python test_tensorflow.py
     - export DDEBACKEND=pytorch
     - python test_pytorch.py
 
