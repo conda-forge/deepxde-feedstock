@@ -7,6 +7,9 @@ from deepxde.backend import tf
 # import torch
 
 
+dde.config.disable_xla_jit()
+
+
 def pde(x, y):
     dy_xx = dde.grad.hessian(y, x)
     # Use tf.sin for backend tensorflow.compat.v1 or tensorflow
