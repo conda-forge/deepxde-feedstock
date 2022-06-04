@@ -32,9 +32,9 @@ test:
     - tensorflow ==2.7.1
     - tensorflow-probability ==0.15.0
     - pytorch
-    - jax
-    - flax
-    - optax
+    # - jax
+    # - flax
+    # - optax
   files:
     - test.py
   commands:
