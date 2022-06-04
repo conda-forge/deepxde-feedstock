@@ -37,11 +37,11 @@ test:
     - test_pytorch.py
   commands:
     - export DDEBACKEND=tensorflow.compat.v1
-    - python test_tensorflow.py
+    - python test.py
     - export DDEBACKEND=tensorflow
-    - python test_tensorflow.py
+    - python test.py
     - export DDEBACKEND=pytorch
-    - python test_pytorch.py
+    - python test.py
 
 about:
   home: https://github.com/lululxvi/deepxde
