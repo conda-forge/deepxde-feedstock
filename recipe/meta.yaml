@@ -33,8 +33,7 @@ test:
     - tensorflow ==2.7.1
     - tensorflow-probability ==0.15.0
   files:
-    - test_tensorflow.py
-    - test_pytorch.py
+    - test.py
   commands:
     - export DDEBACKEND=tensorflow.compat.v1
     - python test.py
