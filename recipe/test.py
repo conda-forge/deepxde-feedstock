@@ -1,18 +1,14 @@
 """Backend supported: tensorflow.compat.v1, tensorflow, pytorch"""
 import deepxde as dde
 import numpy as np
-# Import tf if using backend tensorflow.compat.v1 or tensorflow
-from deepxde.backend import tf
-# Import torch if using backend pytorch
-# import torch
+
+
+dde.config.disable_xla_jit()
 
 
 def pde(x, y):
     dy_xx = dde.grad.hessian(y, x)
-    # Use tf.sin for backend tensorflow.compat.v1 or tensorflow
-    return -dy_xx - np.pi ** 2 * tf.sin(np.pi * x)
-    # Use torch.sin for backend pytorch
-    # return -dy_xx - np.pi ** 2 * torch.sin(np.pi * x)
+    return -dy_xx - np.pi ** 2 * dde.backend.sin(np.pi * x)
 
 
 def boundary(x, on_boundary):
