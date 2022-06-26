@@ -3,7 +3,8 @@ import deepxde as dde
 import numpy as np
 
 
-dde.config.disable_xla_jit()
+if dde.backend.backend_name == "tensorflow":
+    dde.config.disable_xla_jit()
 
 
 def pde(x, y):
