@@ -1,11 +1,11 @@
-About deepxde
-=============
+About deepxde-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/deepxde-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/lululxvi/deepxde
 
 Package license: LGPL-2.1-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/deepxde-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library for scientific machine learning and physics-informed learning
 
