@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - setuptools_scm[toml]
+    - setuptools_scm
     - numpy
   run:
     - python >=3.7
