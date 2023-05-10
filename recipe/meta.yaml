@@ -1,5 +1,5 @@
 {% set name = "DeepXDE" %}
-{% set version = "1.8.4" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d5e85c1c2a68029b2684d3c0da6d4ccbd5e6cf232af7b355e9045cbdc526cfae
+  sha256: 840acab01413662d8f064c6649ec6597ed8f90ce440c5fc04d10e9460bcfcffa
 
 build:
   number: 0
