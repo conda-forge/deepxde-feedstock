@@ -30,8 +30,8 @@ requirements:
 
 test:
   requires:
-    - tensorflow ==2.14.1
-    - tensorflow-probability ==0.22.1
+    - tensorflow ==2.14
+    - tensorflow-probability ==0.22
     - pytorch
     # - jax
     # - flax
