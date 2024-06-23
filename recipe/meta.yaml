@@ -6,7 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/a5/c8/448e0eb8d7daf228b0deb551c8d0b66d7a4fa86a001a6f7b503121944066/deepxde-1.11.1.tar.gz
   sha256: c4280d98f9b086ad8853cf8c49cfcc090b9cb1e6318f3af17442c70cd47c70b6
 
 build:
