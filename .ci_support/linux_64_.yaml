@@ -9,4 +9,4 @@ docker_image:
 numpy:
 - '1.26'
 pytorch:
-- '2.3'
+- '2.4'
