@@ -11,4 +11,4 @@ numpy:
 python_min:
 - '3.9'
 pytorch:
-- '2.4'
+- '2.5'
